@@ -14,5 +14,10 @@ public class ConditionalOperator {
 		int number = scanner.nextInt();
 		System.out.println("Is Odd?"+ + (number%2 != 0 ? '是' : '否'));
 		scanner.close();
+		
+		System.out.println("Input Number:");
+		number = scanner.nextInt();
+		System.out.println("Is Odd?"+ + ((number&1) != 0 ? '是' : '否'));
+		scanner.close();
 	}
 }
