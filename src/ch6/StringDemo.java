@@ -58,5 +58,27 @@ public class StringDemo {
 		for (int i = 0; i < args.length; i++)
 			System.out.println(args[i] + " ");
 
+		String[] fakeFileData = { "Hello\t11/11/11\t0912345678\t1111111", "World\t12/12/12\t0987654321\t2222222" };
+
+		System.out.println(fakeFileData);
+		for (String data : fakeFileData) {
+			System.out.println(data);
+			String[] tokens = data.split("\t");
+			for (String token : tokens)
+				System.out.print(token + "\t| ");
+			System.out.println();
+		}
+
+		text = "abcjgaojgao9djoisfuacbcabc";
+		String[] tokens = text.split(".bc");
+		for (String token : tokens)
+			System.out.println(token + " ");
+		System.out.println();
+		tokens = text.split("..cd");
+		for (String token : tokens)
+			System.out.print(token + " ");
+		System.out.println();
+
+		
 	}
 }
