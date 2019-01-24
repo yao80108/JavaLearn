@@ -16,7 +16,7 @@ class MethodDemo{
 	private int data = 10;
 	
 	public void scopedemo() {
-		int data = 100;
+		// int data = 100;
 	}
 	
 	public int getData() {
